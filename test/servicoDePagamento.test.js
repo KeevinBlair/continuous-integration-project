@@ -63,5 +63,6 @@ describe('Classe de Serviço de Pagamento', () => {
         assert.equal(ultimoPagamento.empresa, 'DenysBank');
         assert.equal(ultimoPagamento.valor, 150.00);
         assert.equal(ultimoPagamento.categoria, 'cara');
+        
     });
 });
