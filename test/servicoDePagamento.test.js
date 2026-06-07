@@ -33,6 +33,20 @@ describe('Classe de Serviço de Pagamento', () => {
         assert.equal(pagamento.categoria, 'padrão');
     })
 
+    it('Validar que o pagamento de exatamente 100.00 é categorizado como padrão', () => {
+    // Arrange
+    const servicoDePagamento = new ServicoDePagamento();
+
+    // Act
+    servicoDePagamento.realizarPagamento('111-222-333', 'JulioBank', 100.00);
+
+    const pagamento = servicoDePagamento.consultarUltimoPagamento();
+
+    // Assert
+    assert.equal(pagamento.valor, 100.00);
+    assert.equal(pagamento.categoria, 'padrão');
+});
+
     it('Validar que retorna o último pagamento realizado', () => {
         // Arrange
         const servicoDePagamento = new ServicoDePagamento();
