@@ -6,9 +6,10 @@
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "npx mocha"
-  },
+"scripts": {
+  "test": "mocha",
+  "test:report": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KeevinBlair/conclus-o-disciplina-javascript.git"
