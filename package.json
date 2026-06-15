@@ -6,10 +6,10 @@
   "directories": {
     "test": "test"
   },
-"scripts": {
-  "test": "mocha",
-  "test:report": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml"
-},
+  "scripts": {
+    "test": "mocha",
+    "test:report": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=reports/test-results.xml"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KeevinBlair/conclus-o-disciplina-javascript.git"
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/KeevinBlair/conclus-o-disciplina-javascript#readme",
   "dependencies": {
     "mocha": "^11.7.6"
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
